@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="pt-pt ">
+<head>
+  <title>Animais Exoticos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+<style>
+body {
+  font: 400 15px Lato, sans-serif;
+  line-height: 1.8;
+  color: #818181;
+  background-color: black;
+  }
+  
+.carousel-inner img {
+  width: 50%; /* Set width to 100% */
+  margin: auto;
+}
+.tituloAnimais {
+    background-color: black;
+    color: #ffffff;
+    font: 400 15px Lato, Arial;
+    
+}
+.thumbnail{
+   background-color: #d22d2d;
+}
+
+.tamanho {
+    font-size: 100px;
+    color: #d22d2d;
+    
+}
+
+.col-sm-7{
+  color: #d22d2d;
+}
+
+.col-sm-3{
+  color: #d22d2d;
+}
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#pet">PETexotiC</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#ani">Animais</a></li>
+        <li><a href="#info">Informação</a></li>
+        <li><a href="#local">Localização</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> 
+
+  
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol> 
+ 
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="Imagens/peixe.jpg" alt="peixe" width="500" height="500">
+      <div class="carousel-caption">
+        <h3>Peixe</h3>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="Imagens/papagaio.jpg" alt="papagaio" width="500" height="500">
+      <div class="carousel-caption">
+        <h3>Papagaio</h3>
+        
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="Imagens/gato.jpg" alt="gato" width="500" height="500">
+      <div class="carousel-caption">
+        <h3>Gato</h3>
+      </div>
+    </div>
+  </div>
+
+  <!----------------------ir para a direita e para a esquerda---------------------->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">anterior</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">proximo</span>
+  </a>
+  <!------------------------------------------------------------------------------->
+</div> 
+
+<div id="ani" class="tituloAnimais text-center">
+    <h1>ANIMAIS</h1>
+  </div>
+  
+<div class="container-fluid text-center bg-grey">
+  <div class="row text-center">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="Imagens/lagarto.png" >
+        <p><strong>Lagartos</strong></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="Imagens/tarantula.png">
+        <p><strong>Tarântulas</strong></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="Imagens/cobra.png">
+        <p><strong>cobras</strong></p>
+        <p></p>
+      </div>
+    </div>
+</div>
+
+<div id="info" class="tituloAnimais text-center">
+    <h1>Informação</h1>
+  </div>
+
+<div class="row">
+    <div class="col-sm-6">
+      <span class="glyphicon glyphicon-time tamanho"></span>
+      <h4>Horarios</h4>
+      <p>Estamos abertos </p>
+      <button data-toggle="collapse" data-target="#demo">Ler mais...</button>
+      <div id="demo" class="collapse" align=left>
+      Trabalhamos toda a semana:<br>
+        segunda-sextas: 8:00 ás 18:00 <br>
+        sabados e domingos: 12:00 ás 17:00
+      </div> 
+    </div>
+   
+    <div class="col-sm-6">
+      <span class="glyphicon glyphicon-heart tamanho"></span>
+      <h4>Veterinario</h4>
+      <p>Traga o seu animal e nos tratamos dele</p>
+        <button data-toggle="collapse" data-target="#demo2">Ler mais...</button>
+        <div id="demo2" class="collapse" align=left>
+        Cuidamos do seu animal como se fosse o nosso<br>
+          Damos vacinas<br>
+          Tosquiamos e damos banho<br>
+          Pesamos
+        </div> 
+    </div>
+</div>  
+
+
+
+
+
+
+
+
+<div id="local" class="tituloAnimais text-center">
+  <h1>Localização</h1>
+</div>
+    
+<div id="localizacao" class="container-fluid text-center bg-grey"> 
+    <!-- Add Google Maps -->
+    <div id="googleMap" style="height:400px;width:100%;"></div>
+    <script>
+      function myMap() {
+      var myCenter = new google.maps.LatLng(38.696146, -9.352862);
+      var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+      var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      var marker = new google.maps.Marker({position:myCenter});
+      marker.setMap(map);
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5IfJU1DanGyGAom96wBnQtXqGOz8UMEM&callback=myMap"></script><br>
+   </div>
+ 
+ <footer  class="container-fluid text-center">
+  <a href="#myNavbar" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+   <p> Criado por João Assis 11ºH  <a href="https://www.facebook.com" title="visita a nossa pagina">Pagina no Facebook</a></p>
+</footer>
+ 
+</body>
+</html>
