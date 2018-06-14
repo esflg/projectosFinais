@@ -1,0 +1,470 @@
+﻿<!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <title>Projeto</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+ 
+  <script>
+$(document).ready(function(){
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  if (this.hash !== "") {
+    event.preventDefault();
+    var hash = this.hash;
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script> 
+  
+  <style>
+  
+ <!-- navbar --> 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    .row.content {height: 450px}
+
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    
+    .navbar {
+    margin-bottom: 0;
+    background-color:#808080;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #000000 !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+ 
+ <!-- imagen -->
+ 
+ img {
+    width:100%;
+
+}
+ 
+<!-- tabela  -->
+  
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+    
+<!-- Painel de preços -->
+ 
+ .panel {
+    border: 1px solid #808080;
+    border-radius:0;
+    transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color:#fff !important;
+    color: #f4511e;
+}
+
+.panel-heading {
+    color: #fff !important;
+    background-color: #20B2AA !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.panel-footer {
+    background-color: #fff !important;
+}
+
+.panel-footer h3 {
+    font-size: 32px;
+}
+
+.panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+}   
+
+div.a {
+    text-align: right;
+    text-indent: 30%;
+
+}
+
+<!-- animação do "volte sempre" -->
+ <marquee style="font-family: arial;" slide direction="right">
+ <span style="color: rgb(255, 160, 120);">Volte Sempre</span></marquee>
+  
+ 
+</style>
+
+</head>
+<body id="MinhaPagina" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!-- NavBar -->
+ <nav class="navbar navbar-default navbar-fixed-top"> 
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Psicologia</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#inicio">Ínicio</a></li>
+        <li><a href="#precos">Preçario</a></li>
+        <li><a href="#contacto">Contactos</a></li>
+        <!-- <span class="glyphicons glyphicons-heartbeat"></span> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+<!-- Inicio -->
+<div id="inicio" class="container-fluid">    
+  <div class="row content">
+    <div class="col-sm-10 text-left"> 
+      <br></br>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="indice.jpg" alt="Psicologia"width="575" height="490" >
+    </div>
+    <div class="col-sm-8">
+        <div class="a">
+      <h2>O que é Psicologia</h2>
+      <p>A Psicologia é a ciência que estuda o comportamento,</p>
+      <p>a relação entre eles em todo o domínio em que entram os comportamentos observáveis (correr, andar, falar, etc)</p>
+      <p>e tambem os processos mentais (pensar, emoções, etc).</p>
+	</div>
+    </div>
+  </div>
+</div>
+
+      <div class="container">    
+  <h2>Os vários tipos de serviços de psicologia que podemos oferecer</h2>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Psicólogos clínicos</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">Os psicólogos clínicos são especializados em distúrbios mentais e emocionais,eles estão preparados para lidar com qualquer problema que se apresente.
+        É por isso que encontramos psicólogos clínicos especializados em transtornos de depressão, compulsão alimentar, transtornos de personalidade, abuso de drogas,etc.
+      </div>
+      </div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Psicoterapeutas</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">Os psicoterapeutas são responsáveis pela prestação de apoio psicológico e ensinar uma variedade de técnicas para melhorar a qualidade de vida dos pacientes.
+        Os Psicoterapeutas tratam dos problemas do cotidiano, os conflitos nos relacionamentos interpessoais ou problemas emocionais que dificultam os relacionamentos. Além disso, tratam e gerenciam as situações de stress e ansiedade que podem afetar os seus relacionamentos.
+        </div>
+      </div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Psicólogos educacionais</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">A psicologia educacional concentra-se nos processos de aprendizagem das pessoas. Esses psicólogos muitas vezes trabalham em escolas como conselheiros ou a ajudar qualquer criança que apresente algum distúrbio de aprendizagem.
+        </div>
+      </div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Neuropsicólogos</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">Normalmente são pesquisadores, embora muitas vezes desenvolvam as suas atividades profissionais no campo de reabilitação cognitiva, comportamental e emocional de pacientes com danos cerebrais. Eles também são especialistas no tratamento de demências.
+        </div>
+      </div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Psicólogos sociais</a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body">Os psicólogos sociais especializam-se em tudo o que relaciona com o comportamento humano e os fatores psicológicos que podem afetar o seu ambiente social.O conhecimento deles engloba desde os relacionamentos interpessoais até outros temas como a cultura e as atitudes que temos para com os outros.
+        </div>
+      </div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Psicólogos do trabalho</a>
+        </h4>
+      </div>
+      <div id="collapse6" class="panel-collapse collapse">
+        <div class="panel-body">Existem psicólogos especializados no campo do trabalho. Encontramos os profissionais nos departamentos de recrutamento das empresas, na formação, saúde e desenvolvimento profissional dos funcionários. Às vezes, também trabalham nos Departamentos de Recursos Humanos.   
+        </div>
+      </div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Psicólogos criminais</a>
+        </h4>
+      </div>
+      <div id="collapse7" class="panel-collapse collapse">
+        <div class="panel-body">Os psicólogos criminais são especializados em questões criminais, por isso a sua experiência é muito importante nos tribunais. De alguma forma, podem orientar o juiz a dar uma sentença justa, contra ou a favor da sua opinião.  
+        </div>
+      </div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">Psicólogos esportivos</a>
+        </h4>
+      </div>
+      <div id="collapse8" class="panel-collapse collapse">
+        <div class="panel-body">Os psicólogos esportivos são responsáveis por trabalhar com os atletas, com o treinador e a organização de toda a equipa. Tudo isso para melhorar o rendimento da equipa, aumentar a sua motivação, aumentar a eficiência e de tratar do stress.       
+        </div>
+      </div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Sexólogos</a>
+        </h4>
+      </div>
+      <div id="collapse9" class="panel-collapse collapse">
+        <div class="panel-body">Os sexólogos também são psicólogos, especialistas em diagnosticar e tratar tudo relacionado aos relacionamentos íntimos. A sua ajuda melhora a saúde sexual das pessoas com problemas nessa área, sejam casais ou pessoas solteiras.
+        </div>
+      </div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Coaching</a>
+        </h4>
+      </div>
+      <div id="collapse10" class="panel-collapse collapse">
+        <div class="panel-body">Os "coaches" podem ser psicólogos e são responsáveis por fazer com que cada pessoa encontre os seus objetivos. Eles se adaptam a cada indivíduo e funcionam como um “conselheiro” para que encontrem os seus caminhos.
+        </div>
+      </div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">Biopsicólogos</a>
+        </h4>
+      </div>
+      <div id="collapse11" class="panel-collapse collapse">
+        <div class="panel-body">Eles estudam e realizam pesquisas sobre o cérebro e comportamento. Eles também investigam como as doenças cerebrais e lesões impactam o comportamento.       
+        </div>
+      </div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse12"> E ainda existem mais... </a>
+        </h4>
+      </div>
+      <div id="collapse12" class="panel-collapse collapse">
+        <div class="panel-body">
+        </div>
+      </div>
+    </div>
+    
+  </div> 
+</div>
+      
+      
+       
+    </div>
+  </div>
+</div>
+
+
+<br></br>
+
+<!-- Preçario -->
+<div id="precos" class="container-fluid">
+  <div class="text-center">
+    <h2>Preçario</h2>
+    <h4>Esolha o tipo de tratamento</h4>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Diário</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20/50</strong> por hora</p>
+          <p>Depende do tipo de psicologia</p>
+          <p>Marcação deve ser feita no dia ou um dia antes</p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Semanalmente</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50/100</strong> por dia</p>
+          <p>Depende do tipo de psicologia</p>
+          <p>Marcação deve ser feita antes da semana começar</p>
+        </div>
+   
+      </div>
+    </div>
+   <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Mensalmente</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>175/225</strong> por mês</p>
+          <p>Depende do tipo de psicologia</p>
+          <p>Marcação deve ser feita antes do mês começar</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 id="contacto" class="container-fluid" align="center">Contactos</h2>
+
+<table align ="center">
+  <tr>
+    <th>Nome</th>
+    <th>Numero de telefone</th>
+    <th>Email</th>
+    <th>Morada</th>
+  </tr>
+  <tr>
+    <td>Mariana</td>
+    <td>962 123 564</td>
+    <td>mariana@gmail.com</td>
+    <td>Lisboa</td>
+  </tr>
+  <tr>
+    <td>Sofia</td>
+    <td>943 591 351</td>
+    <td>santos.sofia@hotmail.com</td>
+    <td>Porto</td>
+  </tr>
+  <tr>
+    <td>Diogo</td>
+    <td>962 445 322</td>
+    <td>digasfer75@gmail.com</td>
+     <td>Belem</td>   
+
+  </tr>
+  <tr>
+    <td>Miguel</td>
+    <td>961 341 563</td>
+     <td>miguel.fernan@gmail.com</td>   
+    <td>Porto</td>
+  </tr>
+  <tr>
+    <td>Pedro</td>
+    <td>965 124 642</td>
+    <td>pedro.felipe@gmail.com</td>
+    <td>Porto</td>
+</table>
+
+<br></br>
+ <marquee behavior=scroll direction=right >Volte sempre</marquee>
+
+</body>
+</html>
