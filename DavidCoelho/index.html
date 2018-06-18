@@ -81,6 +81,21 @@ border-bottom: 3px solid #e04e5e;
   .container {
       padding: 80px 120px;
   }
+  .video {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	  
+  }
   .person {
       border: 10px solid transparent;
       margin-bottom: 25px;
@@ -277,6 +292,12 @@ display: inline;
   -moz-transform: perspective(15px) rotateX(-5deg);
   transform: perspective(15px) rotateX(-5deg);
 }
+  iframe {
+  /* optional */
+  width: 100%;
+  height: 100%; 
+}
+
 	  
   </style>
 </head>
@@ -342,8 +363,7 @@ display: inline;
 <img src="no14.PNG" alt="Bataria da Parede" max-width="100%" max-height="100%" class="center">
 </div>
 	
-<div class="video slideanim" align="center" height="230" width="315
-								">
+<div class="video slideanim">
 <iframe src="https://www.youtube.com/embed/ZNv_XRU189I">
 </iframe>
 	
